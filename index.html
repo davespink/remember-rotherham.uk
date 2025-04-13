@@ -1,18 +1,125 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    .row {
+      display: flex;
+      /* Use Flexbox for layout */
+    }
+
+    .column {
+      padding: 20px;
+    }
+
+    .column.side {
+      flex: 1;
+      /* Side columns take up equal space */
+    }
+
+    .column.middle {
+      flex: 2;
+      /* Middle column takes up twice as much space as the side columns */
+    }
+
+    .column.middle img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column;
+        /* Stack columns vertically on small screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h2>Remember Rotherham</h2>
+  </div>
+
+  <div class="row">
+    <div class="column side" style="background-color:#aaa;">Column</div>
+    <div class="column middle" style="background-color:#bbb;">
+      <img src="image2.jpg" alt="Image">
+
+
+      <p>Here we are in April 2025 and the world is burning, or so it seems.Trump 
+        has set the light with trade wars, and
+        the
+        stock makert is in free fall. The war lingers on in Ukraine, and Britain
+         is in a state of anxiety, with
+        deminished
+        tfust in the Starmer government. Hot tops are the economy, immigration, lack of free
+         speech, goverment invasion
+        of privacy. Resentments that have lingered on for years are coming to a head.
+        In particular the government's reluctance to open a new enquiry into what has 
+        been come to be known as
+        "the Rotherham Grooming Gang scandal", or other similar words.
+      </p>
+      <p>
+
+        The purpose of this website is to act as a resource for links and material 
+        relevant to the scandal.
+        It also will stand as a memorial, so that people never forget what happened
+         in a northern steel town,
+        after the reduction of the steel industry. It's called remember Rotherham 
+        because unhappily that wars
+        one of the first cases to come to light. But is was afterwards found to be 
+        rampant and endemic to
+        similar post industrial town in the north. There should be a Remember Telford, 
+        Remember Oxford,
+        any number of towns up and down the city. I hope people will make their
+         own sites and try to keep
+        the memory alive. The victims have been treated scandalously buy their abusers, 
+        buy the police, by
+        justice system, and by their own government. Stains on the national conscience.
+
+      </p>
 
 
 
 
-<div style="text-align: center">
 
+    </div>
+    <div class="column side" style="background-color:#ccc;">Column</div>
+  </div>
 
+  <div class="footer">
+    <p>Footer</p>
+  </div>
 
-  <h1 style="color:red">Remember always Rotherham</h1>
-
-  <image src="image2.jpg" style="width:50%"></image>
-  <p>
-    <a href="./comments.html">Comments</a>
-  </p>
-</div>
+</body>
 
 </html>
